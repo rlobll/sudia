@@ -13,8 +13,96 @@
 
     <link rel="stylesheet" href="reset.css" />
     <title>수디아sudia</title>
+
+    <style>
+      .logo img {
+        width: 100%;
+      }
+      .schedule img {
+        width: 70%;
+      }
+    </style>
   </head>
   <body>
-    <h1>안녕</h1>
+    <div class="logo">
+      <img src="./images/sudia_01.png" alt="" />
+    </div>
+    <p>1월</p>
+    <table>
+      <thead>
+        <tr>
+          <th>일</th>
+          <th>월</th>
+          <th>화</th>
+          <th>수</th>
+          <th>목</th>
+          <th>금</th>
+          <th>토</th>
+        </tr>
+      </thead>
+      <thead>
+        <tr>
+          <td><p>1</p></td>
+          <td><p>2</p></td>
+          <td><p>3</p></td>
+          <td><p>4</p></td>
+          <td><p>5</p></td>
+          <td><p>6</p></td>
+          <td><p>7</p></td>
+        </tr>
+        <tr>
+          <td><p>8</p></td>
+          <td><p>9</p></td>
+          <td><p>10</p></td>
+          <td><p>11</p></td>
+          <td><p>12</p></td>
+          <td><p>13</p></td>
+          <td><p>14</p></td>
+        </tr>
+        <tr>
+          <td><p>15</p></td>
+          <td><p>16</p></td>
+          <td><p>17</p></td>
+          <td><p>18</p></td>
+          <td><p>19</p></td>
+          <td><p>20</p></td>
+          <td><p>21</p></td>
+        </tr>
+        <tr>
+          <td><p>22</p></td>
+          <td><p>23</p></td>
+          <td><p>24</p></td>
+          <td><p>25</p></td>
+          <td><p>26</p></td>
+          <td><p>27</p></td>
+          <td><p>28</p></td>
+        </tr>
+        <tr>
+          <td><p>29</p></td>
+          <td><p>30</p></td>
+          <td><p>31</p></td>
+          <td><p></p></td>
+          <td><p></p></td>
+          <td><p></p></td>
+          <td><p></p></td>
+        </tr>
+      </thead>
+    </table>
+    <div>
+      <p class="schedule">
+        <img src="./images/oder_01.jpeg" alt="" />
+        <img src="./images/order_02.jpeg" alt="" />
+      </p>
+    </div>
+
+    <script>
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker
+          .register("./service_worker.js")
+          .then(function () {
+            console.log("서비스 워커가 등록 됨");
+          });
+      }
+    </script>
   </body>
 </html>
